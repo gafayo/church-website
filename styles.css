@@ -60,7 +60,6 @@
 
 /* about-container starts from here */
 .about-container{
-    /* width: 90%; */
     padding: 8vw;
     display: grid;
     grid-template-columns: 1fr 40%;
@@ -87,4 +86,19 @@
     background-size: cover;
     padding: 0 20vw;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, var(--normal-color) 0px -12px 30px, var(--gray-color) 0px 4px 6px, var(--normal-color) 0px 12px 13px, var(--light-orange) 0px -3px 5px;
+}
+
+/* small-screens  */
+@media screen and (max-width: 767px){
+    .about-container{
+        padding: 8vw;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        align-items: center;
+        gap: 2em;
+    }
+    .about-text p{
+        font-size: 1em;
+        color: var(--normal-color);
+    }
 }
