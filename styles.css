@@ -67,22 +67,23 @@
     grid-template-columns: 1fr 40%;
     align-items: center;
     justify-content: space-around;
-    gap: 4em;
+    gap: 2em;
 }
 .about-text .title{
     color: var(--light-orange);
     font-size: 8vmin;
 }
 .about-text p{
+    /* border: 1px solid red; */
     font-size: 1.5em;
     color: var(--normal-color);
+    max-width: 450px;
 }
-.about-mirror{
-    max-width: 100%;
-    height: 50vh;
-    background: url(images/happiness1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/* .about-mirror{
+    
+} */
+.about-mirror img{
+    width: 100%;
+    object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, var(--normal-color) 0px -12px 30px, var(--gray-color) 0px 4px 6px, var(--normal-color) 0px 12px 13px, var(--light-orange) 0px -3px 5px;
 }
