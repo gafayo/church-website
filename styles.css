@@ -91,14 +91,16 @@
 /* small-screens  */
 @media screen and (max-width: 767px){
     .about-container{
-        padding: 8vw;
-        display: grid;
-        grid-template-columns: 40% 1fr;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2em;
     }
     .about-text p{
         font-size: 1em;
         color: var(--normal-color);
+    }
+    .about-mirror{
+        border-radius: 50%;
     }
 }
